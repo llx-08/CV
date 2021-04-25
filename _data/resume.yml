@@ -1,22 +1,25 @@
-title: "推免简历"
-lang: "" #语言设置 zh表示中文 en 表示英语
-name: "鲇泽美咲"
-jobtitle: "推免简历" #可空不显示
-photo: "assets/img/wyphoto.JPG" #照片可空，不显示
+# 数据格式可以为 yaml(文件以.yml结尾) 或者json(文件以.json结尾)
+# 如果YAML格式的数据请先检查格式是否有误，可选检查工具 http://www.yamllint.com
+
+title: "简历标题"
+lang: "zh" #语言设置 zh表示中文 en 表示英语
+name: "李林轩"
+jobtitle:  #可空不显示
+photo: "assets/img/me.jpg" #照片可空，不显示
 
 #联系方式
 contact: #联系方式连接等3~5行
-- text: "suifengrudao@outlook.com" #文本内容
-  href: 'mailto:youremail@example.com' #链接，无链接则空  
+- text: "20184320@cqu.edu.cn" #文本内容
+  href: "20184320@cqu.edu.cn" #链接，无链接则空
   icon: 'icons/email.svg' #图标 svg文件
-- text: "13821360925"
-  href: 'tel:13821360925'
+- text: "17694854084"
+  href: 'tel:1234567890'
   icon: 'icons/phone.svg'
-- text: "http://nkumstcer.applinzi.com/"
-  href: 'http://your-website.com'
+- text: "https://llx-08.github.io/"
+  href: 'https://llx-08.github.io/'
   icon: 'icons/web.svg'
-- text: "stoneboat"
-  href: 'https://github.com/NewFuture'
+- text: "llx-08"
+  href: 'https://github.com/llx-08'
   icon: "icons/github.svg"
   attr: 'target="_blank"' #新标签页打开
   # - text: "地址"
@@ -24,51 +27,91 @@ contact: #联系方式连接等3~5行
 
 #main下面是主体内容，类别条数不限
 main: #简历主要内容，
-- type: education 
-  name: '在校成绩'
-  content: #选择需要的格式
-  - title: 五学期总成绩   
-    detail: 学分绩  82.967/100    排名     12/39
-  - title: 第五学期总成绩
-    detail: 学分绩  85.384/100    排名     2/39
-  - title: 外语成绩：托福(IBT)
-    detail: 总成绩(阅读 听力 口语 写作) 88(27,22,19,20)
+- type: education #类别为ID
+  name: 教育 #显示名称，空则使用type
+  content: #内容基本格式 标题-副标题-日期-详细内容 (都允许空)
+  - title: 重庆大学
+    duration: "2018年9月 - 2022年"
+    sub: 本科大三在读
+    detail: 我来自重庆大学计算机学院，专业为计算机科学与技术。前五个学期GPA为3.65，在年级排名16%左右。
+#  - title: Your University
+#    duration: Aug 2007 - Jun 2011
+#    sub: Ut enim ad minim veniam
+#    detail: Master Bachelor of Computer Science & Technology.
 
-- type: education 
-  name: '在校荣誉称号'
-  content: #选择需要的格式
-  - title: 优秀学生干部
-    duration: 2016年10月11日
-    sub: 荣誉授予机构 南开本科团委
-    detail: 担任14级信息安全专业的学习委员，参与组织了班级的一些活动
-  - title: 微软学生俱乐部优秀officer
-    sub:  荣誉授予机构 微软亚洲研究院
-    duration: 2014年10月 - 2016年10月
-    detail: 担任南开大学微软学生俱乐部技术部执行主席，期间获得微软16年学生夏令营作品三等奖，制作过俱乐部通讯录网站，参与了包括云印南开在内的诸多俱乐部项目，并且组织和参加组织了技术部日常运营和俱乐部的的大型活动。
-- type: projects
-  name: 项目经历
+- type: skills
+  # name: "技能"
   content:
-  - title: 端对端加密数据库zerodb研究
-    duration: 2016年6月 - 2017年6月
-    summary: zerodb是一个开源的，最新的端对端加密数据库，它的亮点是实现了一套基于面向对象数据库的密文查询协议，我的工作是搞懂它具体的工作原理，实现细节，对查询协议进行分析。
-    detail: 现在的研究情况是，查询协议代码实现分析完毕，做了初步的安全性分析。下一步会继续跟随刘哲理老师的研究生把所学运用到cryptdb的研究上
-    sub: 实习研究
-  - title: 基于维基百科的实体语义消歧
-    duration: 2015年2月 - 2016年2月
-    summary: 该项目旨在实现一个分析文本，利用知识库对文本内名词歧义消除的系统，我负责建立语义知识库
-    detail: 现在的进展情况是，由于大一参见项目，维基知识语料庞大，对并行，多线程不熟悉等主客观原因，项目历时一年只完成了语义知识库的建立。 现在由大二的同学申请了新的百项继续相关的研究
-    sub: 市创项目
+  - title: 编程语言
+    items: #itmems 可以小块的方式显示
+    - C++：能够使用常见的数据结构，STL 等实现算法
+   items:
+   - Python：用 python 实现过神经网络，遗传算法等。有简单开发 Django Web 的能力
+   items:
+   - Verilog：能够使用 verilog 进行简单的 IP 核设计与开发，能够实现一些基本电路
+  - title: Skill Group
+    summary: 计算机网络，计算机组成原理基本概念熟悉；
+      对基本数据结构了解并能简单运用；
+      了解常用的基本算法，并能够使用 git 等工具
+  - title: 英语技能
+    items:  四级：560，六级：492，具备阅读英文论文以及浏览外文网站 (如 stackoverflow) 的能力
+#- type: experience
+#  name: 经验
+#  content:
+#  - title: 职位
+#    sub: 某某公司
+#    duration: "xxxx年xx月 - yyyy年yy月"
+#    tags:
+#    - 标签
+#    summary: 职务或者工作总结(自动折叠)
+#    detail: 同时包含 summary和detail在Chrome，Safari(包括IOS)，Android和新版Firefox等会自动折叠，不支持折叠的浏览器和展开后表现一致
+#    # open: open
+#    #可以设置open默认展开
+#  - title: Job Title
+#    sub: Your 2nd, Inc.
+#    duration: Apr 2013 - Mar 2016
+#    tags:
+#    - tagname
+#    summary: Summary your job or work. (Collapse)
+#    detail: Details can be collapsed in Chrome Safari, Firefox, Opera and so on. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+- type: projects
+  name: Projects
+  content:
+  - title: IP 块转发端侧发送架构研究
+#    duration: xxxx年xx月 - yyyy年yy月
+    summary: 与华为合作项目，采用 OMNET++ 作为仿真工具，研究在新的转发协议下网络的性能。主要工作为在 OMNET++ 上设计实现优先级转发机制，以及对实现的优先级转发机制进行性能测试
+#    sub: 维护者
+  - title: MIPS SOC 设计与性能优化
+    summary: 用 VERILOG 编写 CPU 逻辑电路，两周内实现了五级流水线的 CPU，完成 52 条指令、SRAM 接口、AXI 接口的添加，完成 CACHE 的设计，能够通过仿真测试点以及生成比特流上板
+  - title: MIPS SOC 设计与性能优化
+    summary: 使用 DJANGO 作为后端，模仿外卖系统制作的网站，在项目中负责设计编写菜品，商店等功能模块的后端代码
+#    detail:
+#      md: _data/demo.md
+#    sub: Creator and maintainer.
    #可继续添加更多内容
 
-#others type: others #ID可以为空
-- type: projects
-  name: 志愿方向
-  content:
-  - title: 信息安全方向
-    sub: 保密通信协议的分析与设计
-    detail: 通信安全系统由安全节点和保密通信两部分组成，保密通信由多种安全协议机制确保它各通信阶段安全，完整，真实的特性。现代的安全协议机制由一个或多个由密码学(cryptograph)理论发展出的加解密算法(encryption)作为保证。我希望在研究生阶段一方面可以对密码学的设计理论和分析有完整和较为详细的学习，特别是在密码理论上发展出的各种算法和最近新出现的一些技术和思想，比如以隐藏访问行为为目的的oram数据结构，另一方面我希望可以在上述的基础上学习安全机制领域的协议设计与分析，并在此基础上研究在新的安全机制领域中协议设计与分析的应用，比如在云数据库查询协议中的应用。
-    
-
+#others 其他简略内容(列表)
+others: #其他列表显示
+- type: others #ID可以为空
+  name: 个人荣誉
+  content: #选择需要的格式
+#  - 单行文字
+#  - title: "加粗:"
+#    text: "列表项二"
+#  - title: "兴趣:"
+#    items: #单行列表
+#    - 睡觉
+#    - 吃饭
+#    - coding
+  - title: 列表
+    list:
+    - 全国大学生数学建模重庆市二等奖,
+    - 2019.5.12 全国大学生英语竞赛 C 类二等奖,
+    - 2020.11 第三届全国高校绿色计算系列大赛三等奖,
+    - 计算机学院综合奖学金乙等奖 *3,
+    - 优秀学生，优秀学生干部，优秀共青团员,
+#- type: 
 #  name: '其他'
 #  content: #选择需要的格式
 #  - 单行文字
@@ -78,9 +121,9 @@ main: #简历主要内容，
 footer: #脚注多组
   print: #打印版markdown或者html
   screen:
-  - text: "推免简历"
+  - text: "简历脚注"
   #   href: '/'
-  - text: "made by stoneboat"
+  - text: "Made with &hearts; by NewFuture"
     href: "https://github.com/NewFuture/CV/"
 
 #页面额外js脚本，如xx统计
