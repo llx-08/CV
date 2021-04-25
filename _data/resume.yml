@@ -45,10 +45,10 @@ main: #简历主要内容，
   - title: 编程语言
     items: #itmems 可以小块的方式显示
     - C++：能够使用常见的数据结构，STL 等实现算法
-#    items:
-#    - Python：用 python 实现过神经网络，遗传算法等。有简单开发 Django Web 的能力
-#    items:
-#    - Verilog：能够使用 verilog 进行简单的 IP 核设计与开发，能够实现一些基本电路
+   items:
+   - Python：用 python 实现过神经网络，遗传算法等。有简单开发 Django Web 的能力
+   items:
+   - Verilog：能够使用 verilog 进行简单的 IP 核设计与开发，能够实现一些基本电路
   - title: Skill Group
     summary: 计算机网络，计算机组成原理基本概念熟悉；
       对基本数据结构了解并能简单运用；
