@@ -37,7 +37,7 @@ main: #简历主要内容，
   - title: 年龄：19
   - title: 学校：重庆大学
     sub: 本科大三在读
-    detail: 我来自重庆大学计算机学院，专业为计算机科学与技术。前五个学期GPA为3.65，在年级总排名16%左右。热爱自己的专业，保持成绩与基础知识的同时参与了网络方面的项目，希望能够在研究生阶段加以钻研。
+    detail: 来自重庆大学计算机学院，专业为计算机科学与技术。前五个学期GPA为3.65，在年级总排名16%左右。热爱自己的专业，保持成绩与基础知识的同时参与了网络方面的项目，希望能够在研究生阶段加以钻研。
 #  - title: Your University
 #    duration: Aug 2007 - Jun 2011
 #    sub: Ut enim ad minim veniam
@@ -72,8 +72,8 @@ main: #简历主要内容，
     summary: 用 VERILOG 编写 CPU 逻辑电路，两周内实现了五级流水线的 CPU，完成 52 条指令、SRAM 接口、AXI 接口的添加，完成 CACHE 的设计，能够通过仿真测试点以及生成比特流上板
     sub: 课程设计项目
     
-  - title: 7lema 网站
-    summary: 使用 DJANGO 作为后端，模仿外卖系统制作的网站，在项目中负责设计编写菜品，商店等功能模块的后端代码
+  - title: 7lema 网站设计与实现
+    summary: 使用 DJANGO 作为后端框架，模仿外卖系统制作网站，在项目中负责设计编写菜品，商店等功能模块的后端代码
     sub: 课程设计项目
 #    detail:
 #      md: _data/demo.md
@@ -106,12 +106,12 @@ others: #其他列表显示
 #  - 单行文字
 #  - 如果有可以继续添加
 
-- type: projects
-  name: 志愿方向
-  content:
-  - title: 网络方向
-    sub: 
-    detail: 
+# - type: projects
+#   name: 志愿方向
+#   content:
+#   - title: 网络方向
+#     sub: 
+#     detail: 
     
     
 #footer 脚注，打印版和web版不同不显示    
